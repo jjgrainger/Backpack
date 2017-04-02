@@ -12,7 +12,7 @@
 Install with bower.
 
 ```
-$ bower install jjgrainger/backpack
+$ bower install jjgrainger-backpack
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ $ bower install jjgrainger/backpack
 To start using Backpack `@import` the main sass file into your app.
 
 ```sass
-@import 'bower_components/backpack/src/backpack'
+@import 'bower_components/jjgrainger-backpack/src/backpack'
 ```
 
 ## What's inside
