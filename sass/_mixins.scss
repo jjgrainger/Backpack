@@ -1,0 +1,74 @@
+//
+// Mixins
+// Collection of useful, global mixins to usethroughout the project
+//
+// Topic specific mixins and function can be found
+// in their respecitve files.
+//
+
+// Size: 1 line width, height values
+// example:
+//      @include size(10px);
+// creates:
+//      width: 10px;
+//      height: 10px;
+//
+// example:
+//      @include size(10px, 20px);
+// creates:
+//      width: 10px;
+//      height: 20px;
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+// Position: 1 line positions
+// example:
+//      @include position(absolute, 10px 20px);
+// creates:
+//      position: absolute;
+//      top: 10px;
+//      right: 20px;
+//      bottom: 10px;
+//      left; 20px;
+@mixin position($position, $values) {
+    position: $position;
+
+    // top is always the first value
+    $top: nth($values, 1);
+
+    // by default the rest will follow
+    $right: $top;
+    $bottom: $top;
+    $left: $top;
+
+    // second value is for both left/right
+    @if length($values) > 1 {
+        $left: nth($values, 2);
+        $right: $left;
+    }
+
+    // third is for bottom
+    @if length($values) > 2 {
+        $bottom: nth($values, 3);
+    }
+
+    // fourth is for left
+    @if length($values) > 3 {
+        $left: nth($values, 4);
+    }
+
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+// CSS3 vertical alignment
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+}

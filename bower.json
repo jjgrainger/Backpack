@@ -1,0 +1,25 @@
+{
+  "name": "jjgrainger-backpack",
+  "authors": [
+    "Joseph Grainger <josephgrainger@gmail.com>"
+  ],
+  "description": "Personal Frontend Framework",
+  "main": "sass/backpack.scss",
+  "keywords": [
+    "css",
+    "sass",
+    "framework"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jjgrainger/backpack.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
