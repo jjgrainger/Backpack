@@ -1,0 +1,19 @@
+{
+  "name": "@jjgrainger/backpack",
+  "version": "1.0.0",
+  "description": "Personal Frontend Framework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjgrainger/backpack.git"
+  },
+  "keywords": [
+    "sass",
+    "framework"
+  ],
+  "author": "jjgrainger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjgrainger/backpack/issues"
+  },
+  "homepage": "https://github.com/jjgrainger/backpack#readme"
+}
