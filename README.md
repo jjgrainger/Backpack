@@ -1,5 +1,7 @@
 # Backpack v1.0
 
+[![Build Status](https://travis-ci.org/jjgrainger/Backpack.svg?branch=master)](https://travis-ci.org/jjgrainger/Backpack) [![NPM version](https://img.shields.io/npm/v/@jjgrainger/backpack.svg)](https://www.npmjs.org/package/stylelint) [![NPM downloads](https://img.shields.io/npm/dt/@jjgrainger/backpack.svg)](https://www.npmjs.org/package/stylelint)
+
 > A personal frontend framework
 
 ## Requirements
