@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/jjgrainger/backpack/issues"
   },
-  "homepage": "https://github.com/jjgrainger/backpack#readme"
+  "homepage": "https://github.com/jjgrainger/backpack#readme",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss"
+  },
+  "devDependencies": {
+    "stylelint": "^9.2.0",
+    "stylelint-scss": "^3.1.0"
+  }
 }
