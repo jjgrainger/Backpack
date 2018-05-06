@@ -1,0 +1,15 @@
+/**
+ * Layout/mixins
+ *
+ * @package: Backpack
+ */
+
+// Create column widths from ratio
+@mixin column($ratio) {
+    width: $ratio * 100%;
+}
+
+// modify gutter amount
+@function gutter($modifier: 1) {
+    @return $modifier * $grid-gutter;
+}
