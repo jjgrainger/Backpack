@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/jjgrainger/backpack#readme",
   "scripts": {
-    "build": "node-sass --output-style compressed --source-map true sass/backpack.scss docs/css/backpack.min.css",
+    "build": "node-sass --output-style compressed --source-map true --include-path node_modules sass/backpack.scss docs/css/backpack.min.css",
     "test": "npm run lint",
     "lint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss"
   },
