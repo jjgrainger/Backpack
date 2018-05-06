@@ -1,0 +1,43 @@
+// utility classes
+// can be included in css so all @extend .bold is the same
+// clasify what bold means in a project
+// could mean a particular font stack (i.e font-family: 'Futura Bold', not font: Future; font-weight: bold)
+.bold { font-weight: bold; }
+
+// usage
+b,
+strong {
+    @extend .bold;
+}
+
+// italic
+.italic { font-style: italic; }
+// usage
+var,
+cite,
+em,
+i {
+    @extend .italic;
+}
+
+// images
+img {
+    max-width: 100%;
+}
+
+// mark
+mark {
+    background-color: yellow;
+}
+
+// strike
+s,
+del {
+    text-decoration: line-through;
+}
+
+// underline
+ins,
+u {
+    text-decoration: underline;
+}
