@@ -1,0 +1,18 @@
+/**
+ * Size: 1 line width, height values
+ * example:
+ *      @include size(10px);
+ * creates:
+ *      width: 10px;
+ *      height: 10px;
+ *
+ * example:
+ *      @include size(10px, 20px);
+ * creates:
+ *      width: 10px;
+ *      height: 20px;
+ */
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}

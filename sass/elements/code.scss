@@ -1,0 +1,19 @@
+/**
+ * Code
+ */
+
+ // code
+ code,
+ samp,
+ kbd {
+     display: inline-block;
+     font-family: monospace;
+     letter-spacing: 0;
+ }
+
+ pre code {
+     background-color: #eee;
+     display: block;
+     padding: $type-leading/2 * 1rem;
+     overflow-x: scroll;
+ }

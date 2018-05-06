@@ -1,0 +1,32 @@
+// Mixins & Functions
+@function rhythm($num) {
+    @return $type-rhythm * $num * 1rem;
+}
+
+// Set font size and line height based on scale
+// can be positive or negative number, but not zero
+@mixin scale($num) {
+
+    $size: 1;
+
+    @if $num > 0 {
+        @for $i from 1 to $num {
+            $size: $size * $type-scale;
+        }
+    } @else {
+
+        $size: $size / $type-scale;
+
+        @for $i from 1 to $num * -1 {
+            $size: $size / $type-scale;
+        }
+    }
+
+    font-size: $size * 1rem;
+
+    @if ( $size >= $type-leading ) {
+        line-height: (round($size) * $type-leading) * 1rem;
+    } @else {
+        line-height: $type-leading * 1rem;
+    }
+}

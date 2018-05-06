@@ -1,0 +1,26 @@
+/**
+ * Base
+ */
+html,
+body {
+    font-family: $type-body-font;
+    font-size: $type-body-size;
+    line-height: $type-leading;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+// vertical rhythm
+h1, h2, h3, h4, h5, h6,
+p,
+ol,
+ul,
+dl,
+figure,
+address,
+table,
+pre code,
+pre,
+img {
+    margin-bottom: $type-leading * 1rem;
+}

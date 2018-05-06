@@ -1,0 +1,23 @@
+/**
+ * Headings
+ */
+
+ .heading,
+ h1, h2, h3, h4, h5, h6 {
+     font-family: $type-title-font;
+ }
+
+ // title and subtitle might be slightly different to headings
+ // maybe not bold, or sub-title is knocked back
+ .title {}
+ .subtitle {}
+
+ // this is strictly font sizing
+ // alpha would be the same size as h1
+ // but may not have sames styles i.e bold
+ h1, .alpha   { @include scale(6); }
+ h2, .beta    { @include scale(5); }
+ h3, .gamma   { @include scale(4); }
+ h4, .delta   { @include scale(3); }
+ h5, .epsilon { @include scale(2); }
+ h6, .zeta    { @include scale(1); }

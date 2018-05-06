@@ -4,7 +4,8 @@
  *
  * @package: Backpack
  */
-@import 'mixins';
-@import 'reset';
-@import 'grid';
-@import 'type';
+@import 'mixins/all';
+@import 'base/all';
+@import 'layout/all';
+@import 'elements/all';
+@import 'utilities';
