@@ -1,0 +1,45 @@
+// reset
+.control select,
+.control input[type="text"],
+.control input[type="password"],
+.control input[type="email"],
+.control input[type="tel"],
+.control textarea,
+.control select {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    font: inherit;
+    line-height: $type-leading;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0;
+    background: transparent;
+}
+
+// base styles
+.control select,
+.control input[type="text"],
+.control input[type="password"],
+.control input[type="email"],
+.control input[type="tel"],
+.control textarea,
+.control select {
+    padding: rhythm(1);
+    border-width: $form-control-border-size;
+    border-color: $form-control-border-color;
+    border-radius: $form-control-border-radius;
+    border-style: solid;
+    background: $form-control-background;
+    margin-bottom: $form-control-border-size * -2; // accomodate for input border
+}
+
+
+// control continer
+.control {
+    padding: rhythm(1) 0;
+}

@@ -1,0 +1,28 @@
+/**
+ * Tables
+ */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    text-align: left;
+}
+
+th {
+    @extend .bold;
+}
+
+th,
+td {
+    padding: .75rem;
+    padding-top: .7em;
+    border: .1em solid;
+}
+
+.table.is-striped {
+    tbody tr:nth-child(even) {
+        background-color: #fefefe;
+    }
+}

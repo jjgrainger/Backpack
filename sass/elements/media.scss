@@ -1,0 +1,31 @@
+/**
+ * Media
+ */
+
+ // images
+img.is-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+img.is-contained {
+    object-fit: contain;
+}
+
+img.is-cover {
+    object-fit: cover;
+}
+
+.video.is-responsive {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 56%;
+
+    iframe {
+        @include position(absolute, 0);
+        @include size(100%);
+    }
+}

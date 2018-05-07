@@ -1,8 +1,24 @@
 /**
  * Quotes
  */
+blockquote {
+    @include scale(2);
+    padding-left: rhythm(4);
 
- // quotes
- blockquote {
-     @include scale(2);
- }
+    cite {
+        display: block;
+        font-size: small;
+    }
+}
+
+q {
+    quotes: initial;
+}
+
+q::before {
+    content: open-quote;
+}
+
+q::after {
+    content: close-quote;
+}

@@ -5,6 +5,7 @@
  */
 .container {
     display: block;
-    max-width: $grid-max-width;
+    max-width: $container-max-width;
+    width: 90%;
     margin: auto;
 }

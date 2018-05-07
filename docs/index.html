@@ -4,15 +4,464 @@
     <meta charset="UTF-8">
     <title>Backpack - A personal frontend framework</title>
     <link rel="stylesheet" href="/css/backpack.min.css" />
+    <style>
+        body {
+            padding: 1.5rem 0;
+        }
+
+        .fill {
+            padding: 1.5rem;
+            background: #eee;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <main class="container">
-        <div class="columns">
-            <div class="column">
-                <h1>Backpack</h1>
-                <p class="subtitle">A personal frontend framework</p>
+    <header class="hero">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="titles">
+                        <h1 class="title">Backpack</h1>
+                        <p class="subtitle gamma">A personal frontend framework</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </header>
+
+    <main>
+        <section id="layout">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h2 class="title">Layout</h2>
+                            <p class="subtitle delta">Create flexible layouts quickly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="container">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h3>Container</h3>
+                        <p>
+                            The container element simple centers your content horizontally.
+                            It's often used as a child element of a section and wraps around columns.
+                        </p>
+                    </div>
+                    <div class="column"></div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <p>
+<pre><code>&lt;div class="container">
+    &lt;div class="columns">
+        &lt;div class="column">1&lt;/div>
+        &lt;div class="column">2&lt;/div>
+        &lt;div class="column">3&lt;/div>
+        &lt;div class="column">4&lt;/div>
+        &lt;div class="column">5&lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="columns">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h3 class="title">Columns</h3>
+                            <p class="subtitle">Simple, flexible columns with Flexbox</p>
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="fill">1</div>
+                    </div>
+                    <div class="column">
+                        <div class="fill">2</div>
+                    </div>
+                    <div class="column">
+                        <div class="fill">3</div>
+                    </div>
+                    <div class="column">
+                        <div class="fill">4</div>
+                    </div>
+                    <div class="column">
+                        <div class="fill">5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="elements">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h2 class="title">Elements</h2>
+                            <p class="subtitle delta">Basic element styles.</p>
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="headings">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h3>Headings</h3>
+                    </div>
+                    <div class="column"></div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <h4>Title groups</h4>
+
+                        <div class="titles">
+                            <h1 class="title">Main Heading</h1>
+                            <p class="subtitle gamma">Sub heading</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <h4>Helper classes</h4>
+                        <pre><code>h1, .alpha
+h2, .beta
+h3, .gamma
+h4, .delta
+h5, .epsilon
+h6, .zeta</code></pre>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h3>Typography</h3>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <p>
+                            A basic paragraph containing different inline elements such as <a href="#">links</a>,
+                            <strong>bold</strong>, <em>emphasis</em>, <ins>underlines</ins>, <del>strikes</del> and <mark>mark</mark>.
+                        </p>
+
+                        <p><a href="#!">This is a text link</a>.</p>
+                        <p><strong>Strong is used to indicate strong importance.</strong></p>
+                        <p><em>This text has added emphasis.</em></p>
+                        <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+                        <p>The <i>i element</i> is text that is offset from the normal text.</p>
+                        <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+                        <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+                        <p><s>This text has a strikethrough</s>.</p>
+                        <blockquote>
+                            <p>This is the block quotation</p>
+                            <cite>This is the citation</cite>
+                        </blockquote>
+                        <p>Superscript<sup>®</sup>.</p>
+                        <p>Subscript for things like H<sub>2</sub>O.</p>
+                        <p><small>This small text is small for for fine print, etc.</small></p>
+                        <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+                        <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+                        <p><cite>This is a citation.</cite></p>
+                        <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+                        <p>The <mark>mark element</mark> indicates a highlight.</p>
+                        <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+                        <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lists">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h3 class="title">Lists</h3>
+                            <p class="subtitle">Ordered, unordered and definitions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <h5>Ordered</h5>
+                        <ol>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                            <li>item 4</li>
+                            <li>item 5</li>
+                        </ol>
+                    </div>
+                    <div class="column">
+                        <h5>Unordered</h5>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                            <li>item 4</li>
+                            <li>item 5</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h5>Definitions</h5>
+                        <dl>
+                            <dt>Milk</dt>
+                            <dd>A cold white liquid</dd>
+
+                            <dt>Coffee</dt>
+                            <dd>A hot black liquid</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="tables">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h3 class="title">Tables</h3>
+                            <p class="subtitle">all the data</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+
+                        <table class="table is-striped">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                </tr>
+                                <tr>
+                                    <td>Jane</td>
+                                    <td>Doe</td>
+                                </tr>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                </tr>
+                                <tr>
+                                    <td>Jane</td>
+                                    <td>Doe</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="media">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h3 class="title">Media</h3>
+                            <p class="subtitle">Images and video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        Using <code>is-responsive</code> class.
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <img src="//fillmurray.com/600/600" alt="Fill Murray" class="is-responsive">
+                    </div>
+
+                    <div class="column">
+                        <img src="//fillmurray.com/600/600" alt="Fill Murray" class="is-responsive">
+                    </div>
+
+                    <div class="column">
+                        <img src="//fillmurray.com/600/600" alt="Fill Murray" class="is-responsive">
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        Can use <code>.is-contained</code> and <code>.is-cover</code> to set how the image fills the available space.
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <figure>
+                            <img class="is-contained" src="//fillmurray.com/1200/600" alt="Fill Murray" style="width: 100%; height: 12.5rem">
+                            <figcaption class="text-center">Fill Murray</figcaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img class="is-cover" src="//fillmurray.com/1200/600" alt="Fill Murray" style="width: 100%; height: 12.5rem">
+                            <figcaption class="text-center">Fill Murray</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h4>Videos</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="video is-responsive">
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="forms" style="padding-top: 1.4rem;">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h2 class="title">Forms</h2>
+                            <p class="subtitle delta">Basic form styles.</p>
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+
+                        <form action="">
+
+                            <div class="field">
+                                <label for="text-input" class="label">Text Input</label>
+                                <div class="control">
+                                    <input type="text" placeholder="Text input" id="text-input">
+                                </div>
+                                <p class="field-help">Helpful description</p>
+                            </div>
+
+                            <div class="field">
+                                <label for="email-input" class="label">Email</label>
+                                <div class="control">
+                                    <input type="email" placeholder="Email Address" id="email-input">
+                                </div>
+                                <p class="field-help">Helpful description</p>
+                            </div>
+
+                            <div class="field">
+                                <label for="textarea-input" class="label">Message</label>
+                                <div class="control">
+                                    <textarea name="textarea-input" id="textarea-input"></textarea>
+                                </div>
+                                <p class="field-help">Type your message here</p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label" for="select">Select</label>
+                                <div class="control">
+                                    <select name="select" id="select">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <p class="field-help">
+                                    Choose an option.
+                                </p>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox" for="checkbox-1">
+                                        <input type="checkbox" id="checkbox-1"> I agree to the terms and conditions
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <label class="radio">
+                                        <input type="radio" name="question" value="yes"> Yes
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="question" value="no"> No
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <input class="button" type="submit" value="Send">
+                                <button class="button">Clear form</button>
+                                <a href="#" class="button">Cancel</a>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </section>
     </main>
+
 </body>
 </html>

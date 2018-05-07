@@ -1,0 +1,12 @@
+// labels
+.label {
+    display: block;
+    @extend .bold;
+    cursor: pointer;
+}
+
+.checkbox,
+.radio {
+    display: inline-block;
+    padding: rhythm(1) 0;
+}
