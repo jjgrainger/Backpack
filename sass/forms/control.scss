@@ -14,7 +14,9 @@
     line-height: 1.5;
     padding: 0;
     margin: 0;
-    border: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
     border-radius: 0;
     background: transparent;
 }
@@ -28,10 +30,12 @@
 .control textarea,
 .control select {
     padding: rhythm(1);
-    border: 1px solid;
-    border-color: #eee;
-    background: #fff;
-    margin-bottom: -2px; // accomodate for input border
+    border-width: $form-control-border-size;
+    border-color: $form-control-border-color;
+    border-radius: $form-control-border-radius;
+    border-style: solid;
+    background: $form-control-background;
+    margin-bottom: $form-control-border-size * -2; // accomodate for input border
 }
 
 
