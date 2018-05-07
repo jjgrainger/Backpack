@@ -3,6 +3,12 @@
  */
 
  // lists
+
+ol,
+ul {
+    list-style-position: inside;
+}
+
  ol { list-style-type: decimal; }
  ul { list-style-type: disc; }
 
