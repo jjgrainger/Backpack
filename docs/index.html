@@ -4,15 +4,99 @@
     <meta charset="UTF-8">
     <title>Backpack - A personal frontend framework</title>
     <link rel="stylesheet" href="/css/backpack.min.css" />
+    <style>
+        .fill {
+            padding: 1.5rem;
+            background: #eee;
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-    <main class="container">
-        <div class="columns">
-            <div class="column">
-                <h1>Backpack</h1>
-                <p class="subtitle">A personal frontend framework</p>
+<body class="baseline">
+    <header class="hero">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1>Backpack</h1>
+                    <p class="subtitle">A personal frontend framework</p>
+                </div>
             </div>
         </div>
+    </header>
+
+    <main>
+        <section id="layout">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h2>Layout</h2>
+                        <p class="subtitle">Create flexible layouts quickly</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="container">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h3>Container</h3>
+                        <p>
+                            The container element simple centers your content horizontally.
+                            It's often used as a child element of a section and wraps around columns.
+                        </p>
+                    </div>
+                    <div class="column"></div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <p>
+<pre><code>&lt;div class="container">
+    &lt;div class="columns">
+        &lt;div class="column">1&lt;/div>
+        &lt;div class="column">2&lt;/div>
+        &lt;div class="column">3&lt;/div>
+        &lt;div class="column">4&lt;/div>
+        &lt;div class="column">5&lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="columns">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h3>Columns</h3>
+                        <p class="subtitle">Simple, flexible columns with Flexbox</p>
+                    </div>
+                    <div class="column"></div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="fill">1</div>
+                    </div>
+                    <div class="column">
+                        <div class="fill">2</div>
+                    </div>
+                    <div class="column">
+                        <div class="fill">3</div>
+                    </div>
+                    <div class="column">
+                        <div class="fill">4</div>
+                    </div>
+                    <div class="column">
+                        <div class="fill">5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
 </body>
 </html>
