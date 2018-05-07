@@ -16,6 +16,7 @@ strong {
 var,
 cite,
 em,
+dfn,
 i {
     @extend .italic;
 }
@@ -40,4 +41,18 @@ del {
 ins,
 u {
     text-decoration: underline;
+}
+
+sup,
+sub {
+    font-size: smaller;
+    line-height: 1;
+}
+
+sup { vertical-align: sup; }
+sub { vertical-align: sub; }
+
+
+abbr[title] {
+    cursor: help;
 }
