@@ -6,15 +6,15 @@
 
 ## Requirements
 
-* Have [Bower](https://bower.io) installed.
+* Have [npm](https://www.npmjs.com/get-npm) installed.
 * Project compiles [Sass](http://sass-lang.com/).
 
 ## Installation
 
-Install with bower.
+Install with npm.
 
 ```
-$ bower install jjgrainger-backpack
+$ npm install @jjgrainger/backpack --save
 ```
 
 ## Usage
@@ -22,15 +22,16 @@ $ bower install jjgrainger-backpack
 To start using Backpack `@import` the main sass file into your app.
 
 ```sass
-@import 'bower_components/jjgrainger-backpack/src/backpack'
+@import 'node_modules/@jjgrainger/backpack/sass/backpack'
 ```
 
 ## What's inside
 
 * __Mixins:__ A collection of useful mixins
 * __Reset:__ Eric Myers Reset
-* __Grid:__ A reponsive, float based, fractional grid
+* __Layout:__ A simple, multipurpose container and flexbox driven columns
 * __Type:__ Basic type settings to build from
+* __Forms:__ Basic form styles
 
 ## Notes
 
