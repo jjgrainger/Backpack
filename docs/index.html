@@ -110,7 +110,10 @@
             <div class="container">
                 <div class="columns">
                     <div class="column">
-                        <h2>Elements</h2>
+                        <div class="titles">
+                            <h2 class="title">Elements</h2>
+                            <p class="subtitle delta">Basic element styles.</p>
+                        </div>
                     </div>
                     <div class="column"></div>
                 </div>
@@ -186,7 +189,7 @@ h6, .zeta</code></pre>
                         <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
                         <p><s>This text has a strikethrough</s>.</p>
                         <blockquote>
-                            <p>This is the quotation</p>
+                            <p>This is the block quotation</p>
                             <cite>This is the citation</cite>
                         </blockquote>
                         <p>Superscript<sup>®</sup>.</p>
@@ -245,6 +248,72 @@ h6, .zeta</code></pre>
                             <dt>Coffee</dt>
                             <dd>A hot black liquid</dd>
                         </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h3 class="title">Media</h3>
+                            <p class="subtitle">Images and video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        Using <code>is-responsive</code> class.
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <img src="//fillmurray.com/600/600" alt="Fill Murray" class="is-responsive">
+                    </div>
+
+                    <div class="column">
+                        <img src="//fillmurray.com/600/600" alt="Fill Murray" class="is-responsive">
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        Can use <code>.is-contained</code> and <code>.is-cover</code> to set how the image fills the available space.
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <figure>
+                            <img class="is-contained" src="//fillmurray.com/1200/600" alt="Fill Murray" style="width: 100%; height: 12.5rem">
+                            <figcaption class="text-center">Fill Murray</figcaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img class="is-cover" src="//fillmurray.com/1200/600" alt="Fill Murray" style="width: 100%; height: 12.5rem">
+                            <figcaption class="text-center">Fill Murray</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="titles">
+                            <h4>Videos</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="video is-responsive">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
