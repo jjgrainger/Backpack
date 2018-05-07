@@ -1,0 +1,24 @@
+button.button,
+a.button,
+.button {
+    -webkit-appearance: none;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.button,
+a.button,
+.button {
+    background: #000;
+    color: #fff;
+    padding: rhythm(2);
+    transition: background ease .3s;
+
+    &:hover {
+        background: lighten(#000, 10%);
+    }
+}

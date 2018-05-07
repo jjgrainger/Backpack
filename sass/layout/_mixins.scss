@@ -11,5 +11,5 @@
 
 // modify gutter amount
 @function gutter($modifier: 1) {
-    @return $modifier * $grid-gutter;
+    @return $modifier * $column-gutter;
 }
